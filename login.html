@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<script>
+function validarLogin() {
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if (user === "petrella55" && pass === "rocco2005") {
+        window.location.href = "petrella_headlines.htm";
+    } else {
+        alert("Usuário ou senha incorretos");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Árvore dos Petrella</h2>
+
+<input type="text" id="username" placeholder="Usuário"><br><br>
+<input type="password" id="password" placeholder="Senha"><br><br>
+
+<button onclick="validarLogin()">Entrar</button>
+
+</body>
+</html>
